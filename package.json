@@ -1,0 +1,10 @@
+{
+  "name": "spasm-landing",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Landing page for Signer and Protocol Agnostic Social Media (Spasm)",
+  "private": true,
+  "scripts": {
+    "test": "echo 'no tests'"
+  }
+}
