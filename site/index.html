@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spasm - The Future of Social Media</title>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Courier New', monospace;
+      /* font-family: 'Courier New', Courier, monospace; */
+    }
+
+    h1 {
+      color: #f420af;
+      font-size: 5rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 0.5s forwards;
+    }
+
+    h2 {
+      color: #f420af;
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 0.5s forwards;
+    }
+
+    h3 {
+      color: #f420af;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 0.5s forwards;
+    }
+
+    h4 {
+      color: #f420af;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 0.5s forwards;
+    }
+    
+    h5 {
+      font-size: 1.7rem;
+      margin-bottom: 0.2rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 0.5s forwards;
+    }
+
+    h6 {
+      font-size: 1.4rem;
+      margin-bottom: 0.2rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 0.5s forwards;
+    }
+
+    p {
+      font-family: 'Courier New', monospace;
+      font-size: 1.2rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 1.5s forwards;
+    }
+    
+    span {
+      font-family: 'Courier New', monospace;
+      font-size: 1.2rem;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 1.5s forwards;
+    }
+
+    .big-button {
+      color: #f420af;
+      border: 2px solid #f420af;
+      border-radius: 0.6rem;
+      cursor: pointer;
+      padding: 1.1rem 1.8rem;
+      margin: 1rem;
+      font-size: 1.2rem;
+      display: inline;
+      text-decoration: none;
+      opacity: 0;
+      animation: fadeIn 3s ease-out 0.5s forwards;
+    }
+
+    .big-button:hover {
+      background-color: #1f1f1f;
+    }
+
+    .big-button a {
+      color: #f420af;
+      text-decoration: none;
+    }
+
+    .bg-dark {
+      background-color: rgba(0,0,0,0.5);
+    }
+
+    nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #0F0F0F;
+      padding: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      z-index: 100;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .instance {
+      color: #f420af;
+      opacity: 0;
+      font-weight: bold;
+      animation: fadeIn 3s ease-out 1.5s forwards;
+      text-decoration: none;
+    }
+
+    section {
+      min-height: 90vh;
+      height: 90%;
+    }
+
+    #hero {
+      max-width: 920px;
+      margin: auto;
+      min-height: 100vh;
+      height: 100%;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      flex-direction: column;
+    }
+
+    #hero h1 {
+      font-family: sans-serif;
+      background-color: #000;
+      padding: 2px 5px;
+    }
+
+    #hero h6 {
+      background-color: #000;
+      padding: 2px 5px;
+    }
+
+    #lotus {
+      max-width: 920px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      flex-direction: column;
+      margin-bottom: 10rem;
+      background-image: url('lotus.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 420px;
+      padding-bottom: 4rem;
+    }
+
+    #rules {
+      border: 2px solid;
+      border-color: red;
+      max-width: 920px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      flex-direction: column;
+      margin-bottom: 10rem;
+      background-image: url('rules.png');
+      background-position: right 20px bottom 10px;
+      background-repeat: no-repeat;
+      background-size: 420px;
+      padding-bottom: 4rem;
+    }
+
+    #rules h3 {
+      color: red;
+      background-color: #000;
+      font-family: sans-serif;
+    }
+
+    #rules h6 {
+      background-color: #000;
+      padding: 2px 5px;
+    }
+
+    #description {
+      padding: 4rem;
+    }
+    #description h3 {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    #description p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    #evolution {
+      line-height: 1.6;
+      padding: 1rem;
+      padding-top: 5rem;
+      /* width: 100%; */
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    #evolution-pyramid {
+      text-align: center;
+    }
+    .pyramid-row {
+      display: flex;
+      align-items: center; /* Vertically aligns the content */
+      justify-content: flex-start; /* Starts from the left */
+      margin-bottom: 50px;
+    }
+    .pyramid-label {
+      white-space: nowrap; /* Prevents wrapping to a new line */
+      margin-right: 10px;
+      text-align: left;
+      flex-shrink: 0; /* Prevents the label from shrinking */
+      min-width: 6rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: gray;
+    }
+    .pyramid-text {
+      text-align: center;
+      flex-grow: 1; /* Allows text to take up the remaining space */
+      word-spacing: -2px;
+      letter-spacing: -1px;
+    }
+
+    #instances {
+      padding: 4rem;
+    }
+    #instances h3 {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    #instances p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    #tech {
+      padding: 4rem;
+    }
+    #tech h3 {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    #tech p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #timeline {
+      padding: 4rem;
+    }
+    #timeline h3 {
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    #timeline h6 {
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    #timeline p {
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    #contacts {
+      padding: 4rem;
+    }
+    #contacts h3 {
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    #contacts p {
+      max-width: 500px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    #join {
+      padding: 4rem;
+    }
+    #join h3 {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    #join p {
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+
+    #keys {
+      border: 2px solid;
+      border-color: #f420af;
+      max-width: 920px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      flex-direction: column;
+      margin-bottom: 10rem;
+    }
+
+    #keys h3 {
+      color: red;
+      background-color: #000;
+      font-family: sans-serif;
+    }
+
+    #keys h6 {
+      background-color: #000;
+      padding: 2px 5px;
+    }
+
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 920px) {
+      #rules {
+        background-size: 400px;
+        border: 0px;
+      }
+
+      #keys {
+        border: 0px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      h5 {
+        font-size: 1.3rem;
+      }
+
+      h6 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+      #rules {
+        background-size: 350px;
+      }
+    }
+    @media (max-width: 640px) {
+      #rules {
+        background-size: 320px;
+        background-position: right 5px bottom 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+      <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#description">About</a></li>
+          <li><a href="#instances">Instances</a></li>
+          <li><a href="#tech">Tech</a></li>
+          <li><a href="#timeline">Timeline</a></li>
+          <li><a href="#contacts">Contacts</a></li>
+      </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Spasm</h1>
+    <h6>The future of social media is here</h6>
+    <div style="margin-top: 6rem">
+      <a href="https://slides.spasm.network" target="_blank" class="big-button">Enter the future</a>
+    </div>
+  </section>
+
+  <!-- Rules Section -->
+  <section id="rules">
+    <h3>Spasm rules</h3>
+    <h6>1) You are not a slave</h6>
+    <h6>2) You are NOT a fucking slave</h6>
+  </section>
+
+  <!-- Description Section -->
+  <section id="description">
+    <h3>Open ecosystem</h3>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">The Signer and Protocol Agnostic Social Media (Spasm) is the only truly open ecosystem, which is agnostic to signing keys, messaging protocols, transport layers, and storage infrastructure.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Users are able to sign messages with any private key of their choice and trigger the propagation of those messages in any network they want, via any transport protocol, or even all at once.</p>
+    <p>Spasm is the next step in the evolution of social media after various signature-based decentralized solutions like Secure Scuttlebutt, Steem/Hive, Nostr, Farcaster, Lens, Bluesky, etc.</p>
+  </section>
+
+  <!-- Evolution Section -->
+  <section id="evolution">
+    <!-- <h3>Evolution</h3> -->
+    <div id="evolution-pyramid">
+      <div class="pyramid-row">
+        <span class="pyramid-label">Endgame</span>
+        <span class="pyramid-text"><h3>Spasm</h3></span>
+      </div>
+      <div class="pyramid-row">
+        <span class="pyramid-label">Web3</span>
+        <span class="pyramid-text">SSB Steem/Hive Nostr Lens Farcaster Bluesky</span>
+      </div>
+      <div class="pyramid-row">
+        <span class="pyramid-label">Fediverse</span>
+        <span class="pyramid-text">Mastodon Diaspora Lemmy Pleroma Hubzilla PeerTube</span>
+      </div>
+      <div class="pyramid-row">
+        <span class="pyramid-label">Trash</span>
+        <span class="pyramid-text">Facebook Instagram Twitter Reddit Discord Telegram YouTube Nebula</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Agentic Economy Section -->
+  <section id="description">
+    <h3>Agentic economy</h3>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Spasm is a critical infrastructure component for the emerging agent economy, supporting both agent-to-agent (A2A) and consumer-to-agent (C2A) interactions.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Multi-agent coordination is necessary to allow autonomous AI agents to compete, collaborate, and create value within the agentic economy.</p>
+    <p>Spasm provides the most advanced public communication
+    <a href="https://degenrocket.space/news/spasmid01e7b984794c6a8278ad896" title="degenrocket.space" target="_blank" class="instance">
+      framework
+    </a>
+    where each agent can autonomously sign messages with a unique private key and distribute messages across different networks.</p>
+  </section>
+
+  <!-- Forum Section -->
+  <section id="description">
+    <h3>Spasm-powered forum</h3>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Imagine a social media platform without accounts, email addresses, or phone numbers, where your community owns the conversation, and your voice can't be silenced. Spasm-powered web3-native forum allows users to directly sign all messages with various private keys, such as Ethereum and Nostr.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Messages are stored on your server, providing a typical forum-like experience, and can also propagate through different networks, increasing your community's exposure. You can optionally federate with other forums, building a larger and more censorship-resistant community.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">All forums are highly customizable, enabling you to tailor the experience to fit your community's unique needs. You can modify the UI and enable various modules such as Spasm, Nostr, and RSS modules.</p>
+    <p>Spasm-powered forums are ideal for <strong>hackathons</strong>, <strong>meetups</strong>, and other <strong>events</strong>, allowing community leaders to keep users engaged and grow brands beyond annual events.</p>
+  </section>
+
+  <!-- Instances Section -->
+  <section id="instances">
+    <h3>Instances</h3>
+    <p style="margin-top: 3rem">
+      <a href="https://degenrocket.space" title="degenrocket.space" target="_blank" class="instance">
+        degenrocket.space
+      </a>
+      - DeFi, NFT, privacy
+    </p>
+    <p>
+      <a href="https://dark.vegas" title="dark.vegas" target="_blank" class="instance">
+        dark.vegas
+      </a>
+      - lunarpunk anti-memecoins
+    </p>
+    <p>
+      <a href="https://monero.top" title="monero.top" target="_blank" class="instance">
+        monero.top
+      </a>
+      - Monero (XMR) forum
+    </p>
+    <p>
+      <a href="https://forum.simplifiedprivacy.com" title="rebelnet.me" target="_blank" class="instance">
+        forum.simplifiedprivacy.com
+      </a>
+      - cypherpunk tech (ex-RebelNet)
+    </p>
+    <p style="margin-bottom: 3rem; margin-top: 3rem">The Spasm network consists of independent self-hosted interoperable instances run by DAOs, local communities, and other freedom seekers who want to escape censorship and surveillance of centralized platforms.</p>
+  </section>
+
+  <!-- Tech Section -->
+  <section id="tech">
+    <h3 style="margin-bottom: 3rem">Tech</h3>
+    <p>
+      <a href="https://docs.spasm.network" title="spasm docs" target="_blank" class="instance">
+        docs
+      </a>
+      - Spasm docs
+    </p>
+    <p>
+      <a href="https://www.npmjs.com/package/spasm.js" title="spasm.js" target="_blank" class="instance">
+        spasm.js
+      </a>
+      - npm package
+    </p>
+    <p>
+      <a href="https://github.com/degenrocket/degenrocket-web" title="degenrocket-web" target="_blank" class="instance">
+        degenrocket-web
+      </a>
+      - Spasm-powered forum (frontend)
+    </p>
+    <p>
+      <a href="https://github.com/degenrocket/degenrocket-server" title="degenrocket-server" target="_blank" class="instance">
+        degenrocket-server
+      </a>
+      - Spasm-powered forum (backend)
+    </p>
+    <p>
+      <a href="https://github.com/degenrocket/degenrocket-scripts" title="degenrocket-scripts" target="_blank" class="instance">
+        degenrocket-scripts
+      </a>
+      - scripts to manage server
+    </p>
+  </section>
+
+  <!-- History Section -->
+  <section id="timeline">
+    <h3>Timeline</h3>
+    <h6 style="margin-top: 3rem; margin-bottom: 0rem;">2021</h6>
+    <p>- support Ethereum private keys</p>
+    <p>- support RSS and DMP protocol</p>
+    <p>- released v0 (proof-of-concept)</p>
+    <h6 style="margin-top: 2rem; margin-bottom: 0rem;">2022</h6>
+    <p>- 
+      <a href="https://degenrocket.space/news/spasmid01192d1f9994bf436f50841" title="genesis" target="_blank" class="instance">
+        genesis
+      </a>
+    </p>
+    <p>- v1-beta</p>
+    <h6 style="margin-top: 2rem; margin-bottom: 0rem;">2023</h6>
+    <p>- released v1</p>
+    <p>- support Nostr private keys</p>
+    <p>- support Nostr messaging protocol</p>
+    <h6 style="margin-top: 2rem; margin-bottom: 0rem;">2024</h6>
+    <p>- v2-beta</p>
+    <p>- multi-signing</p>
+    <p>- support Nostr network</p>
+  </section>
+
+  <!-- Join Section -->
+  <section id="join">
+    <h3>Join the revolution</h3>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Spasm is the endgame of social media: decentralized, censorship-resistant, and fully agnostic, letting you use your own app to sign messages with any protocol, any private key, and send them to any network - we don't care, you do you.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Run your own Spasm instance and take control of your online space. No centralized overlords, no data mining, no bullshit. Just you, your community, and the freedom to customize and moderate as you see fit.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Spasm is built on cutting-edge tech, ditching legacy FOSS baggage like email addresses, accounts, and passwords.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Join the decentralized crew and help build a censorship-resistant network that's all about community, not corporate interests.</p>
+    <p style="margin-bottom: 3rem; margin-top: 3rem">
+      Try Spasm at
+      <a href="https://demo.spasm.network" title="demo.spasm.network" target="_blank" class="instance">
+        demo playground
+      </a>
+      without any registration.
+    </p>
+  </section>
+
+  <!-- Contacts Section -->
+  <section id="contacts">
+    <h3 style="margin-top: 5rem; margin-bottom: 3rem">Contacts</h3>
+    <p>
+      Session:
+      <a href="https://getsession.org" title="session" target="_blank" class="instance">
+        degenrocket
+      </a>
+    </p>
+    <p>
+      Nostr:
+      <a href="https://primal.net/p/npub1kwnsd0xwkw03j0d92088vf2a66a9kztsq8ywlp0lrwfwn9yffjqspcmr0z" title="nostr-web" target="_blank" class="instance">
+        web
+      </a>
+      /
+      <a href="nostr:npub1kwnsd0xwkw03j0d92088vf2a66a9kztsq8ywlp0lrwfwn9yffjqspcmr0z" title="nostr-default-app" target="_blank" class="instance">
+        default app
+      </a>
+    </p>
+  </section>
+
+  <!-- Keys Section -->
+  <section id="keys">
+    <p>
+      <a href="https://degenrocket.space/news/spasmid01192d1f9994bf436f50841" title="genesis" target="_blank" class="instance">
+        not your keys, not your words
+      </a>
+    </p>
+  </section>
+
+  <!-- Lotus image -->
+  <section id="lotus">
+    <div style="margin-top: 3rem">
+      <a href="https://slides.spasm.network" target="_blank" class="big-button bg-dark">Enter the future</a>
+    </div>
+  </section>
+</body>
+</html>
