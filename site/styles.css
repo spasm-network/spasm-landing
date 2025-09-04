@@ -317,6 +317,21 @@ nav a {
   }
 }
 
+.image-section {
+  width: 90%;
+  max-width: 820px;
+  margin: auto;
+}
+
+.image-tags {
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+  height: auto;
+  display: block;
+  text-align: center;
+}
+
 #lotus {
   max-width: 920px;
   margin: auto;
@@ -583,6 +598,28 @@ html {
     background-size: 320px;
     background-position: right 5px bottom 20px;
   }
+}
+
+.custom-icons {
+  width: 1rem;
+  height: 1rem;
+  display: inline;
+  margin-top: -0.15rem;
+}
+
+.social-icons {
+  width: 1.8rem;
+  height: 1.8rem;
+  display: inline;
+  margin-top: -0.15rem;
+}
+
+@media (min-width: 768px) {
+  .social-icons {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+
 }
 
 /* Tailwindcss-style classes */
