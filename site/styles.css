@@ -1,6 +1,6 @@
 :root {
   --colorBase-light: #000000;
-  --colorBase-dark: #d8d8d8;
+  --colorBase-dark: #ffffff;
   --colorBase: var(--colorBase-dark);
 
   --colorPrimary-light: #f420af;
@@ -8,7 +8,7 @@
   --colorPrimary: var(--colorPrimary-dark);
 
   --colorSecondary-light: #000000;
-  --colorSecondary-dark: #ffffff;
+  --colorSecondary-dark: #a8a8a8;
   --colorSecondary: var(--colorSecondary-dark);
 
   --colorHover-light: #243746;
@@ -64,7 +64,8 @@
 
 body {
   background-color: #000;
-  color: #fff;
+  /* color: #fff; */
+  color: var(--colorBase);
   font-family: 'Courier New', monospace;
   /* font-family: 'Courier New', Courier, monospace; */
 }
@@ -799,6 +800,9 @@ html {
 }
 .color-pink {
   color: #f420af;
+}
+.color-secondary {
+  color: var(--colorSecondary);
 }
 
 
