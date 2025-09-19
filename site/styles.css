@@ -789,6 +789,74 @@ html {
   margin-bottom: 1rem;
 }
 
+.mr-10 {
+  margin-right: 10rem;
+}
+.mr-9 {
+  margin-right: 9rem;
+}
+.mr-8 {
+  margin-right: 8rem;
+}
+.mr-7 {
+  margin-right: 7rem;
+}
+.mr-6 {
+  margin-right: 6rem;
+}
+.mr-5 {
+  margin-right: 5rem;
+}
+.mr-4 {
+  margin-right: 4rem;
+}
+.mr-3 {
+  margin-right: 3rem;
+}
+.mr-2 {
+  margin-right: 2rem;
+}
+.mr-05 {
+  margin-right: 0.5rem;
+}
+.mr-02 {
+  margin-right: 0.2rem;
+}
+
+.ml-10 {
+  margin-left: 10rem;
+}
+.ml-9 {
+  margin-left: 9rem;
+}
+.ml-8 {
+  margin-left: 8rem;
+}
+.ml-7 {
+  margin-left: 7rem;
+}
+.ml-6 {
+  margin-left: 6rem;
+}
+.ml-5 {
+  margin-left: 5rem;
+}
+.ml-4 {
+  margin-left: 4rem;
+}
+.ml-3 {
+  margin-left: 3rem;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+.ml-1 {
+  margin-left: 1rem;
+}
+.ml-05 {
+  margin-left: 0.5rem;
+}
+
 .color-red {
   color: red;
 }
