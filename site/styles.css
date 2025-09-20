@@ -915,3 +915,10 @@ xxl {
 .text-xxl {
   font-size: xx-large;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.pointer {
+  cursor: pointer;
+}
