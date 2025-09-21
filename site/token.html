@@ -31,7 +31,7 @@
       <li><a href="/learn">Learn</a></li>
       <li><a href="/tribes">Tribes</a></li>
       <li><a href="/run">Run</a></li>
-      <li><a href="/token">Token</a></li>
+      <li><a href="/token" class=active-nav-tab>Token</a></li>
       <li><a href="https://docs.spasm.network" target="_blank">
         Docs
         <!-- Icon: ExternalWebsite -->
@@ -39,7 +39,7 @@
           <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
       </a></li>
-      <li><a href="/contacts" class=active-nav-tab>Contacts</a></li>
+      <li><a href="/contacts">Contacts</a></li>
       <!-- Social icons -->
       <li><a href="https://forum.spasm.network" target="_blank">
         <!-- Icon: Spasm -->
@@ -61,34 +61,103 @@
     </ul>
   </nav>
 
-  <!-- Contacts Section -->
-  <section id="contacts">
-    <h3 style="margin-top: 5rem; margin-bottom: 3rem">Contacts</h3>
-    <p>
-      Session:
-      <a href="https://getsession.org" title="session" target="_blank" class="instance">
-        degenrocket
+  <!-- Genesis image -->
+  <section class="image-section mt-4">
+    <img src="media/zeus-genesis-alpha.jpeg" class="image-tags"></img>
+  </section>
+
+  <!-- Info Section -->
+  <section class="centered-content-section color-secondary">
+    <p style="margin-top: 0rem;">Ethereum:
+      <span id="ethereum-address-to-copy"><span class="standard-colors bold mr-02">0x3333</span><span class="mr-02">3470</span><span class="mr-02">b917</span><span class="mr-02">fe3e</span><span class="mr-02">669e</span><span class="mr-02">1646</span><span class="mr-02">b969</span><span class="mr-02">90aa</span><span class="mr-02">369e</span><span class="standard-colors bold">3333</span></span>
+      <!-- Icon: CopyToClipboard -->
+      <svg class="copy-icons pointer" id="icon-copy-ethereum-address" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" onclick="copyEthereumAddress()">
+        <path d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="copy-icons-check pointer" id="icon-copy-ethereum-address-check" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.5 12.75l6 6 9-13.5" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <noscript>
+        <style>
+          .copy-icons {
+            display: none; /* Hide the icon if JS is disabled */
+          }
+        </style>
+      </noscript>
+    </p>
+
+    <p style="margin-top: 2rem;">
+      <a href="https://forum.spasm.network/news/spasmid0168fa37f818a60ddaa8af6d2210ef96024ca1e08c0180da85988aab7a0cdd4302" title="Genesis" target="_blank" class="instance text-xl">
+        Genesis
+      </a>
+      <a href="https://etherscan.io/token/0x33333470b917fe3e669e1646b96990aa369e3333#code" title="Etherscan" target="_blank" class="instance text-xl">
+        Etherscan
+      </a>
+      <a href="https://app.uniswap.org/explore/tokens/ethereum/0x33333470b917fe3e669e1646b96990aa369e3333" title="Uniswap" target="_blank" class="instance text-xl">
+        Uniswap
+      </a>
+      <a href="https://www.dextools.io/app/en/ether/pair-explorer/0x07a5c4d12647e155269e06570870a4f2b9e43525406ee9327541251c052df91e" title="Dextools" target="_blank" class="instance text-xl">
+        Dextools
       </a>
     </p>
-    <p>
-      Nostr:
-      <a href="https://primal.net/p/npub1kwnsd0xwkw03j0d92088vf2a66a9kztsq8ywlp0lrwfwn9yffjqspcmr0z" title="nostr-web" target="_blank" class="instance">
-        web
-      </a>
-      /
-      <a href="nostr:npub1kwnsd0xwkw03j0d92088vf2a66a9kztsq8ywlp0lrwfwn9yffjqspcmr0z" title="nostr-default-app" target="_blank" class="instance">
-        default app
-      </a>
+  </section>
+
+  <!-- Hero Section -->
+  <section id="hero" class="height-80 color-secondary">
+    <div class="token-header-container">
+      <h1>SPASM</h1>
+    </div>
+    <h6 class="standard-colors">Lunarpunk memecoin for free beings</h6>
     </p>
-    <p style="margin-top: 4rem;">We also have a group chat on
-      <a href="https://getsession.org/" title="get Session app" target="_blank" class="instance">
-        Session
+  </section>
+
+  <!-- Tokenomics Section -->
+  <section id="tokenomics" class="mt-3">
+    <h3>Tokenomics</h3>
+    <p style="margin-top: 1rem">SPASM is a lunarpunk memecoin, featuring unique tokenomics that will be gradually revealed over multiple stages.</p>
+    <p style="margin-top: 1rem">The setup process may take a few years to finalize, so buckle up for the long flight.</p>
+    <h6 style="margin-top: 3rem; margin-bottom: 0rem;">Stage 1. Genesis</h6>
+    <p>+ Ethereum contract
+      <a href="https://etherscan.io/token/0x33333470b917fe3e669e1646b96990aa369e3333#code" title="Etherscan" target="_blank" class="instance">
+        deployed
         <!-- Icon: ExternalWebsite -->
         <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="custom-icons">
           <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
       </a>
-      messaging app, where you can get help and ask any questions about Spasm. Send a message to <strong>degenrocket</strong> to be added to the group chat.</p>
+    </p>
+    <p>+ Uniswap v4 pool
+      <a href="https://app.uniswap.org/explore/pools/ethereum/0x07a5c4d12647e155269e06570870a4f2b9e43525406ee9327541251c052df91e" title="Etherscan" target="_blank" class="instance">
+        created
+        <!-- Icon: ExternalWebsite -->
+        <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="custom-icons">
+          <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </a>
+    </p>
+    <h6 style="margin-top: 2rem; margin-bottom: 0rem;">Stage 2. TBA</h6>
   </section>
+
+  <!-- Get in touch button -->
+  <section id="lotus" class="height-90">
+    <div style="margin-top: 3rem">
+      <a href="/contacts" class="big-button bg-dark">Get in touch</a>
+    </div>
+  </section>
+  <script>
+    function copyEthereumAddress() {
+      const text = document.getElementById('ethereum-address-to-copy').innerText;
+      navigator.clipboard.writeText(text);
+      const iconCopy = document.getElementById('icon-copy-ethereum-address');
+      iconCopy.style.display = 'none';
+      const iconCopyCheck = document.getElementById('icon-copy-ethereum-address-check');
+      iconCopyCheck.style.display = 'inline';
+      setTimeout(() => {
+        iconCopy.style.display = 'inline';
+        iconCopyCheck.style.display = 'none';
+      }, 750)
+    }
+
+  </script>
 </body>
 </html>

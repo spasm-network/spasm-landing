@@ -318,6 +318,17 @@ nav a {
   }
 }
 
+.centered-content-section {
+  max-width: 920px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  flex-direction: column;
+}
+
 .image-section {
   width: 90%;
   max-width: 820px;
@@ -480,6 +491,25 @@ html {
   line-height: 1.6;
 }
 
+#tokenomics {
+  padding: 4rem;
+}
+#tokenomics h3 {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+#tokenomics h6 {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+#tokenomics p {
+  max-width: 500px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 #contacts {
   padding: 4rem;
 }
@@ -601,6 +631,12 @@ html {
   }
 }
 
+.token-header-container {
+  border: 8px solid var(--colorPrimary);
+  margin: 5rem;
+  padding: 3rem 8rem;
+}
+
 .custom-icons {
   width: 1rem;
   height: 1rem;
@@ -613,6 +649,26 @@ html {
   height: 1.8rem;
   display: inline;
   margin-top: -0.15rem;
+}
+
+.copy-icons {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: inline;
+}
+
+.copy-icons:hover {
+  color: var(--colorNotImportant);
+}
+
+.copy-icons-check {
+  width: 1.2rem;
+  height: 1.2rem;
+  display: none;
+}
+
+.copy-icons-check:hover {
+  color: var(--colorNotImportant);
 }
 
 @media (min-width: 768px) {
