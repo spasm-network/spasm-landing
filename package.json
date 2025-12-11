@@ -17,6 +17,6 @@
     "test": "echo 'no tests'"
   },
   "dependencies": {
-    "http-server": "^14.1.1"
+    "http-server": "14.1.1"
   }
 }
