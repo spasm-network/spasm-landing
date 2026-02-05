@@ -28,9 +28,9 @@
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="hamburger">☰</label>
     <ul class="nav-links">
-      <li><a href="/learn" class=active-nav-tab>Learn</a></li>
+      <li><a href="/learn">Learn</a></li>
       <li><a href="/tribes">Tribes</a></li>
-      <li><a href="/apps">Apps</a></li>
+      <li><a href="/apps" class=active-nav-tab>Apps</a></li>
       <li><a href="/run">Run</a></li>
       <li><a href="/token">Token</a></li>
       <li><a href="https://docs.spasm.network" target="_blank">
@@ -62,195 +62,198 @@
     </ul>
   </nav>
 
-  <!-- Video Section -->
-  <section class="video-section mt-6">
-    <video class="video-tags" width="1280" height="720" controls>
-      <!-- <source src="media/spasm-the-endgame-of-social-media.mp4" type="video/mp4"> -->
-      <source src="https://media.spasm.network/spasmvi01f316a39a710c2bef7288a8f8485876c48a87ede8f4f23941d4577c05617101ee.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-
-  <!-- Description Section -->
-  <!-- <section id="description"> -->
-  <section class="text-section">
-    <h3>Open ecosystem</h3>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">The Signer and Protocol Agnostic Social Media (Spasm) is the only truly open ecosystem, which is agnostic to signing keys, messaging protocols, transport layers, and storage infrastructure.</p>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Users can sign messages with any private key and trigger propagation in any network, via any transport protocol, or even all at once.</p>
-    <p>Spasm is the next step in the evolution of social media after various signature-based decentralized solutions like Secure Scuttlebutt, Steem/Hive, Nostr, Farcaster, Lens, Bluesky, etc.</p>
-  </section>
-
-  <!-- Watch slides button -->
-  <section class="buttons-section mb-4">
-    <div>
-      <a href="https://slides.spasm.network" target="_blank" class="big-button bg-dark">Watch slides</a>
-    </div>
-  </section>
-
-  <!-- History Section -->
-  <section id="timeline">
-    <h3>Timeline</h3>
-    <h6 style="margin-top: 3rem; margin-bottom: 0rem;">2021</h6>
-    <p>- support Ethereum private keys</p>
-    <p>- support RSS and DMP protocol</p>
-    <p>- released v0 (proof-of-concept)</p>
-    <h6 style="margin-top: 2rem; margin-bottom: 0rem;">2022</h6>
-    <p>- 
-      <a href="https://degenrocket.space/news/spasmid01192d1f9994bf436f50841" title="genesis" target="_blank" class="instance">
-        genesis
-        <!-- Icon: ExternalWebsite -->
-        <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="custom-icons">
-          <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </a>
-    </p>
-    <p>- v1-beta</p>
-    <h6 style="margin-top: 2rem; margin-bottom: 0rem;">2023</h6>
-    <p>- released v1</p>
-    <p>- support Nostr private keys</p>
-    <p>- support Nostr messaging protocol</p>
-    <h6 style="margin-top: 2rem; margin-bottom: 0rem;">2024</h6>
-    <p>- v2-beta</p>
-    <p>- 
-      <a href="https://docs.spasm.network/features#multi-signing" title="multi-signing" target="_blank" class="instance">
-        multi-signing
-        <!-- Icon: ExternalWebsite -->
-        <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="custom-icons">
-          <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </a>
-    </p>
-    <p>- support Nostr network</p>
-    <h6 style="margin-top: 2rem; margin-bottom: 0rem;">2025</h6>
-    <p>- v2-rc</p>
-    <p>- 
-      <a href="https://forum.spasm.network/news/spasmid0168fa37f818a60ddaa8af6d2210ef96024ca1e08c0180da85988aab7a0cdd4302" title="token launch" target="_blank" class="instance">
-        token launch
-        <!-- Icon: ExternalWebsite -->
-        <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="custom-icons">
-          <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </a>
-    </p>
-  </section>
-
   <!-- Forum Section -->
-  <!-- <section id="description"> -->
   <section class="text-section">
     <h3>Spasm forum</h3>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Imagine a social media platform without accounts, email addresses, or phone numbers, where your community owns the conversation, and your voice can't be silenced. Spasm-powered web3-native forum allows users to directly sign all messages with various private keys, such as Ethereum and Nostr. More keys will be available in the future.</p>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Messages are stored on your server, providing a typical forum-like experience, and can also propagate through different networks, increasing your community's exposure. You can optionally federate with other forums, building a larger and more censorship-resistant community.</p>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">All forums are highly customizable, enabling you to tailor the experience to fit your community's unique needs. You can modify the UI and enable various modules such as Spasm, Nostr, and RSS modules.</p>
-    <p>Spasm-powered forums are ideal for <strong>hackathons</strong>, <strong>meetups</strong>, and other <strong>events</strong>, allowing community leaders to keep users engaged and grow brands beyond annual events.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">There will be all sorts of Spasm-compatible apps, but the first implementation is a forum.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Imagine a social media platform without accounts, email addresses, or phone numbers, where your community owns the conversation, and your voice can't be silenced. Spasm-powered forum allows users to directly sign all messages with various private keys, such as Ethereum and Nostr, with more keys coming down the line soon.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Messages are stored on your server, providing a typical forum-like experience, and they can also propagate through different networks, increasing your community's exposure. You can optionally federate with other forums, building a larger and more censorship-resistant community.</p>
+    <p style="margin-top: 3rem; margin-bottom: 0rem;">All forums are highly customizable, enabling you to tailor the experience to fit your community's unique needs. You can modify the UI and enable various modules such as Spasm, Nostr, and RSS modules.</p>
   </section>
 
   <!-- Try demo button -->
-  <section class="buttons-section mb-4">
+  <section class="buttons-section mb-0">
     <div>
-      <a href="/apps" target="_blank" class="big-button bg-dark">Read about Spasm forum</a>
+      <a href="https://demo.spasm.network/" target="_blank" class="big-button bg-dark">Try demo playground</a>
     </div>
   </section>
 
-  <!-- Agentic Economy Section -->
-  <!-- <section id="description"> -->
   <section class="text-section">
-    <h3>Agentic economy</h3>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Spasm is a critical infrastructure component for the emerging agent economy, supporting both agent-to-agent (A2A) and consumer-to-agent (C2A) interactions.</p>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Multi-agent coordination is necessary to allow autonomous AI agents to compete, collaborate, and create value within the agentic economy.</p>
-    <p>Spasm provides the most advanced public communication
-    <a href="https://degenrocket.space/news/spasmid01e7b984794c6a8278ad896" title="degenrocket.space" target="_blank" class="instance">
-      framework
-      <!-- Icon: ExternalWebsite -->
-      <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="custom-icons">
-        <path d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" stroke-linecap="round" stroke-linejoin="round"></path>
-      </svg>
-    </a>
-    where each agent can autonomously sign messages with a unique private key and distribute messages across different networks.</p>
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Here are some basic features available on Spasm-powered forums:</p>
   </section>
 
-  <!-- Read docs button -->
-  <section class="buttons-section mb-4">
-    <div>
-      <a href="https://docs.spasm.network" target="_blank" class="big-button bg-dark">Read docs</a>
-    </div>
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim0102f7cb904f3d8f5ebef97cd35318ea47b2fd1e8f08d11625fd4acb72efdf4cba.jpeg" class="image-tags"></img>
   </section>
 
-  <!-- Web3 auth image -->
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Multiple feed filters allow users to find most relevant content. Each instance can choose its own categories and adjust values for activity filters like "rising" and "hot".</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim01e01d3b84cc81363d40761f1a586b7f495c1a635d0fa7502d8aeb579a00bead9d.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">All messages are directly signed with private keys, so they can be verified and users remain full custody of their own identities.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim018dd93bd0cf9fd371326bfed79f6c5abd2a2d10598ecfd7010f2c83cd0aa379cf.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 3rem;">Users can sign messages with different private keys. More keys will be added in the future.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">To get persistent identities, users can sign messages with existing private keys by connecting web3 browser extensions or using web3 browsers on mobile devices.</p>
+    <p style="margin-top: 3rem; margin-bottom: 1rem;">To achieve more privacy, users can submit messages using anon identities. Unlike on slave tech message boards like 4chan, a user can submit anon messages from his own Spasm instance or even from locally run frontend to unlock full privacy since that message will then propagate through the Spasm network without exposing user's IP and other browser-related metadata.</p>
+  </section>
+
   <section class="image-section">
-    <img src="media/web3-auth-vs-sign.jpeg" class="image-tags"></img>
+    <img src="https://media.spasm.network/spasmim01ebf048fd6af644c82db99301fa6c9b95fb2c1c9314b87f76a2cf252e1f34fd50.jpeg" class="image-tags"></img>
   </section>
 
-  <!-- Direct signing section -->
   <section class="text-section">
-    <h3>Direct signing</h3>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Spasm ditches an outdated wallet authentication method (EIP-4361) that relies on the same slave tech architecture used by legacy centralized social media platforms.</p>
-    <p style="margin-top: 3rem;"> Instead, Spasm utilizes modern direct signing of all events, which is fully aligned with web3 values.</p>
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Messages can be multi-signed with different signing schemes, allowing user to utilize benefits of different ecosystems. For example, unique usernames from blockchain-based ecosystem like Ethereum, and social graphs from offchain ecosystems like Nostr.</p>
   </section>
 
-  <!-- Video Section -->
-  <section class="video-section mt-6">
-    <video class="video-tags" width="1280" height="720" controls>
-      <!-- <source src="media/web3-auth-vs-spasm.mp4" type="video/mp4"> -->
-      <source src="https://media.spasm.network/spasmvi0154b262c75008c8314b1aab4167533be1de92cd958591af7f0f75602bb7524434.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim01e1776719832e7ffc41dfaad50783611c750b238f4014ccc6c82d51383bc5e357.jpeg" class="image-tags"></img>
   </section>
 
-  <!-- Tech Section -->
-  <section id="tech">
-    <h3 style="margin-bottom: 3rem">Tech</h3>
-    <p>
-      <a href="https://docs.spasm.network" title="spasm docs" target="_blank" class="instance">
-        docs
-      </a>
-      - Spasm docs
-    </p>
-    <p>
-      <a href="https://www.npmjs.com/package/spasm.js" title="spasm.js" target="_blank" class="instance">
-        spasm.js
-      </a>
-      - npm package
-    </p>
-    <p>
-      <a href="https://github.com/spasm-network/spasm-forum-web" title="spasm-forum-web" target="_blank" class="instance">
-        spasm-forum-web
-      </a>
-      - Spasm-powered forum (frontend)
-    </p>
-    <p>
-      <a href="https://github.com/spasm-network/spasm-forum-server" title="spasm-forum-server" target="_blank" class="instance">
-        spasm-forum-server
-      </a>
-      - Spasm-powered forum (backend)
-    </p>
-    <p>
-      <a href="https://github.com/spasm-network/spasm-forum-scripts" title="spasm-forum-scripts" target="_blank" class="instance">
-        spasm-forum-scripts
-      </a>
-      - scripts to manage server
-    </p>
-    <p>
-      <a href="https://github.com/spasm-network/spasm-media" title="spasm-media" target="_blank" class="instance">
-        spasm-media
-      </a>
-      - host media files
-    </p>
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Messages can be submitted to different networks with one lick.</p>
   </section>
 
-  <!-- Join Section -->
-  <section id="join">
-    <h3>Join the revolution</h3>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Spasm is the endgame of social media: decentralized, censorship-resistant, and fully agnostic, letting you use your own app to sign messages with any protocol, any private key, and send them to any network - we don't care, you do you.</p>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Run your own Spasm instance and take control of your online space. No centralized overlords, no data mining, no bullshit. Just you, your community, and the freedom to customize and moderate as you see fit.</p>
-    <p style="margin-top: 3rem; margin-bottom: 3rem;">Spasm is built on cutting-edge freedom tech, ditching legacy slave tech baggage like email addresses, accounts, and passwords.</p>
-    <p style="margin-top: 3rem;">Join the decentralized crew and help build a censorship-resistant network that's all about community, not corporate interests.</p>
+  <section class="image-section">
+    <img src="https://media.spasm.network/spasmim01bb576a5bbb402a7ae7f90144d8868a72104c40c0b562977c4bd4d3b3def8111b.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 3rem;">Spasm can also wrap unsigned web2 events, e.g., fetched from RSS feeds, and propagate them through the network.</p>
+    <p style="margin-top: 3rem; margin-bottom: 1rem;">Users can comment on such wrapped web2 events with URLs as IDs, which means that users can comment on any slave tech content.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim01bb1b0875699440954afc818af22792b7db455b414ee64273a00b668f2a536490.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Highly customizable RSS feeds provide a subscribe option for users of outdated tech like RSS readers.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim0159ba4f42abf28a0f7cb2624153f6b1762243f236cc355e5d5f55e73a015aebdb.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 3rem;">It's also possible to subscribe with RSS to events submitted by one author only, which is great for following a podcast.</p>
+    <p style="margin-top: 3rem; margin-bottom: 1rem;">Web3 events signed with a private key use a unique Spasm ID as GUID to make sure that modern RSS apps can deduplicate the same events coming from different Spasm instances.</p>
+  </section>
+
+  <section class="image-section">
+    <img src="https://media.spasm.network/spasmim011d827096a77effe93de8778972985bfd1362d37422b2b6b15b53adedd20149f5.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Markdown is supported by default, but can be disabled by admins.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim0148b1a8233e84482dd94a4debefa4b92a4643ff08477e23d027b8173b4bc34f05.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Users can attach images, videos, and audio files.</p>
+  </section>
+
+  <section class="image-section-small" style="margin-top: 3rem; margin-bottom: 4rem;">
+    <img src="https://media.spasm.network/spasmim01d80eb3a6c83eef017d5cfa066d6b5fb6b85f2111b7367f9121774aaf360ed14f.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim011a6020544b6d5e7b02fa15fe3a5f487c2b73cd5c280dd42d87c17b1128c75801.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Auto-embedding media files can be disabled by admins seeking to provide their users with the most privacy-focused experience.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim01805422f626128dc90c82ba6cc0001f741817a41647914774c7468778a193f0c5.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Users can tip each other with various cryptocurrencies.</p>
+  </section>
+
+  <section class="image-section">
+    <img src="https://media.spasm.network/spasmim01426509adc084c699eb7732288c13d46a62c829af27878dc1c96e68075e6786db.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Admins can pin posts via a web dashboard.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim014d61cd1e349b472f05b0c198ca29b13b6c72f41c0684eaf8621018a58cac34c4.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Admins can change forum's title, description, SEO values, social links, and much more.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim014b32e1bb9582996c118937a94879867f34bea3c053322cd72f5dea4831f84a0b.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">And it's possible to have a fully custom home page.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim01ee6aaee8d0152306282b06fb69aed41953b5a54de30b30deb72bb8af97e6a899.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">A forum can be customized with <strong>.env</strong> file or via a web dashboard.</p>
+  </section>
+
+  <section class="image-section-small">
+    <img src="https://media.spasm.network/spasmim012a3b119465330e5265b996e3bea15aeb34e5f05db3651f32805cbb959070cdcc.jpeg" class="image-tags"></img>
+  </section>
+
+  <section class="text-section">
+    <p style="margin-top: 1rem; margin-bottom: 1rem;">Spasm forums reject account-based web2-style slave tech architecture, so even all admin events are directly signed with private keys.</p>
+  </section>
+
+  <!-- Summary Section -->
+  <section class="text-section">
+    <h3>Summary</h3>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">The vast majority of the web3 ecosystem is powered by legacy web2 forums with the outdated account-based slave tech architecture.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">Spasm-powered forums provide a better alternative since all messages are directly signed with private keys, similar to how cryptocurrencies and DeFi operate.</p>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">This web3 architecture offers serious advantages:</p>
+    <ul>
+      <li>Users can submit new posts and comments in a truly web3 way without any registration, which increases engagement.</li>
+      <li>There's no need to sign any login message or rely on a third party service to handle authentication, ensuring a high degree of privacy.</li>
+      <li>Enhanced security because signed messages can't be tampered with since they're verified on both the server and client sides against the provided signatures.</li>
+      <li>Your community cannot be censored by a centralized platform.</li>
+      <li>You can impose any moderation rules.</li>
+      <li>Messages can propagate through different networks, increasing your community's exposure.</li>
+      <li>You can optionally federate with a few other Spasm instances, adding more content to your forum.</li>
+      <li>Users can sign messages offline and then broadcast them, additionally boosting security.</li>
+      <li>Better privacy as users can broadcast messages through relays or locally run frontends.</li>
+      <li>Interoperability with other platforms and optional federation increases censorship resistance.</li>
+      <li>Users remain full custody of their own identities.</li>
+    </ul>
+    <p style="margin-top: 3rem; margin-bottom: 3rem;">All forums are highly customizable, enabling you to tailor the experience to fit your community's unique needs. You can modify the UI and enable various modules such as Spasm, Nostr, and RSS modules.</p>
+    <p>Spasm-powered forums are ideal for <strong>local communities</strong>, <strong>open-source projects</strong>, <strong>DAOs</strong>, <strong>hackathons</strong>, <strong>meetups</strong>, and other <strong>events</strong>, allowing community leaders to keep users engaged and grow brands beyond annual events.</p>
   </section>
 
   <!-- Find your tribe button -->
   <section id="lotus" class="height-90">
   <!-- <section class="buttons-section mt-8"> -->
     <div style="margin-top: 3rem">
-      <a href="/tribes" class="big-button bg-dark">Find your tribe</a>
+      <a href="/run" class="big-button bg-dark">Start your tribe</a>
     </div>
   </section>
 </body>
