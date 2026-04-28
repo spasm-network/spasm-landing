@@ -176,6 +176,7 @@ nav ul {
 
 nav ul li {
   padding-top: 1rem;
+  margin: 0px -5px;
 }
 
 nav a {
@@ -708,6 +709,7 @@ html {
   height: 1.8rem;
   display: inline;
   margin-top: -0.15rem;
+  margin: -5px;
 }
 
 .copy-icons {
