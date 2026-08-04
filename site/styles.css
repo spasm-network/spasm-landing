@@ -20,7 +20,7 @@
   --colorNotImportant: var(--colorNotImportant-dark);
 
   --colorGreen-light: #089703;
-  --colorGreen-dark: #0ad203;
+  --colorGreen-dark: #089703;
   --colorGreen: var(--colorGreen-dark);
 
   --colorRed-light: #ff0a0a;
